@@ -1,5 +1,47 @@
 .App {
   text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  min-height: 95vh;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: auto;
+
+  article {
+    flex: 1;
+    width: 50%;
+    min-width: 45%;
+    max-width: 600px;
+    background-color: #61dafb95;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px #083c4a;
+
+    h1 {
+      color: rgb(153, 255, 0);
+    }
+
+    button {
+      background-color: blueviolet;
+      padding: 1rem;
+      border-radius: 1rem;
+      color: white;
+      border: none;
+      box-shadow: 5px 5px rgb(62, 9, 110);
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+
+    p {
+      overflow-wrap: break-word;
+    }
+  }
 }
 
 .App-logo {

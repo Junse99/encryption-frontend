@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import AESMethod from './methods/aes';
+import HMACMethod from './methods/hmac';
+import RSAMethod from './methods/rsa';
+import SHA256Method from './methods/sha256';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AESMethod />
+      <RSAMethod />
+      <SHA256Method />
+      <HMACMethod />
     </div>
   );
 }
